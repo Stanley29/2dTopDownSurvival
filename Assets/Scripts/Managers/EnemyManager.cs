@@ -23,7 +23,7 @@ public class EnemyManager : MonoBehaviour
         }
 
         var direction = Random.insideUnitCircle.normalized;
-        var distance = Random.Range(7, 15); // for e.g 7 is min and 15 max
+        var distance = Random.Range(7, 15);
         var pos = direction * distance;
 
         GameObject plt = Instantiate(enemy);

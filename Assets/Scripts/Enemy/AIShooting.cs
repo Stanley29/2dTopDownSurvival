@@ -33,17 +33,11 @@ public class AIShooting : MonoBehaviour
         gunLight = GetComponent<Light>();
         gunTrigger = false;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        // fire = gunTrigger;
         fire = targeter.gunTrigger;
 
         if (fire && timer >= timeBetweenBullets && Time.timeScale != 0)

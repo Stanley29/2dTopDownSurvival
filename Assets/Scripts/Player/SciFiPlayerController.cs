@@ -40,8 +40,6 @@ public class SciFiPlayerController : MonoBehaviour
 
         Move();
         Rotate();
-
-        // animator.SetBool("Shoot", false);
     }
 
     private void Move()
@@ -73,10 +71,6 @@ public class SciFiPlayerController : MonoBehaviour
             animator.SetBool("Jump", false);
         }
 
-        //Vector3 move = transform.forward * verticalMove + transform.right * horisontalMove;
-        //characterController.Move(speed * Time.deltaTime * move + gravityMove * Time.deltaTime);
-
-        //animator.SetBool("isWalking", verticalMove != 0 || horisontalMove != 0);
         animator.SetBool("isWalking", verticalMove > 0);
         animator.SetBool("Backward", verticalMove < 0);
         animator.SetBool("StrafeLeft", horisontalMove < 0);
