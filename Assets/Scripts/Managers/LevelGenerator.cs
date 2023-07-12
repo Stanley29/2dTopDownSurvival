@@ -31,6 +31,5 @@ public class LevelGenerator : MonoBehaviour
             Random.Range(zMinimum, zMaximum)), Quaternion.identity);
 
         newGameObject.transform.parent = this.transform;
-        newGameObject.transform.tag = "Teleportation";
     }
 }
